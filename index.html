@@ -1,57 +1,148 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<title>L'évolution des animations sur le web</title>
+	
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+	
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
+	
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+	
+	<style>
+		* {
+			font-family: 'Aleo', serif !important;
+		}
+		
+		.reveal h1 {
+			font-size: 64px;
+		}
+		
+		.reveal h2 {
+			font-size: 46px;
+		}
+		
+		.slides section:first-child div {
+			color:#ee5253;
+			background: #ffffffee;
+			padding: 50px;
+		}
+		
+		.slides section:first-child h1,
+		.slides section:first-child h2 {
+			color:#ee5253;
+		}
+		
+		.sommaire .sommaire-parts {
+			display: flex;
+		}
+		
+		.sommaire ul {
+			list-style-type: none;
+			background-color: #fe5a3f;
+			transform: rotate(1deg);
+			padding: 15px 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		
+		.sommaire ul li {
+			font-size: 28px;
+			color: #fff;
+			margin: 20px 0;
+			line-height: 1em;
+		}
 
-		<title>reveal.js</title>
+		.sommaire ul li.sommaire-arrow {
+			font-size: 80px;
+			position: relative;
+			line-height: 1px;
+			text-align: center;
+			animation: moveArrow 1s ease-in-out infinite alternate;
+		}
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
-
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>Slide 1</h1>
-					<p>Incroyable !</p>
-				</section>
-				<section>
-					<h1>Slide 2</h1>
-					<p>Test d'intégration d'un Codepen</p>
-					<iframe height='265' scrolling='no' title='Checkbox Rocker Toggle Switch' src='//codepen.io/marcusconnor/embed/QJNvMa/?height=265&theme-id=0&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/marcusconnor/pen/QJNvMa/'>Checkbox Rocker Toggle Switch</a> by Marcus Connor (<a href='https://codepen.io/marcusconnor'>@marcusconnor</a>) on <a href='https://codepen.io'>CodePen</a>.
-					</iframe>
-				</section>
-			</div>
+		@keyframes moveArrow {
+			from {
+				left: -60px;
+			}
+			
+			to {
+				left: 0;
+			}
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-image="/images/s1_bg2.jpg">
+				<div>
+					<h1>Enjeux et évolutions</h1>
+					<h2>de l'animation sur le web</h2>
+					<p>Par Guillaume PHAM NGOC et Yoann VIE</p>
+				</div>
+			</section>
+			<section class="sommaire" data-background-color="#fedd02">
+				<h1>Sommaire</h1>
+				<div class="sommaire-parts">
+					<ul>
+						<li>1. Préhistoire de l'animation : GIF et Flash</li>
+						<li>2. CSS : entre accessibilité et performances</li>
+						<li>3. Javascript, nouveau terrain de jeu des designers</li>
+						<li>4. Les navigateurs web : quel impact ?</li>
+					</ul>
+					<ul>
+						<li>5. Et demain ?</li>
+						<li>6. Du graphiste au développeur</li>
+						<li>7. Utilisation commerciale</li>
+						<li class="sommaire-arrow">&#8692;</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<h1>Slide 1</h1>
+				<p>Test d'intégration d'un Codepen</p>
+				<iframe height='265' scrolling='no' title='Checkbox Rocker Toggle Switch' src='//codepen.io/marcusconnor/embed/QJNvMa/?height=265&theme-id=0&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/marcusconnor/pen/QJNvMa/'>Checkbox Rocker Toggle Switch</a> by Marcus Connor (<a href='https://codepen.io/marcusconnor'>@marcusconnor</a>) on <a href='https://codepen.io'>CodePen</a>.
+				</iframe>
+			</section>
+			<section data-markdown>
+				# merci
+				------
+			</section>
 		</div>
-
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-
-		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
-			Reveal.initialize({
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
-	</body>
+	</div>
+	
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+			{ src: 'plugin/markdown/marked.js' },
+			{ src: 'plugin/markdown/markdown.js' },
+			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
 </html>
