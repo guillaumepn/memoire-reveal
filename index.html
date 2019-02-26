@@ -7,7 +7,8 @@
 	<title>L'évolution des animations sur le web</title>
 	
 	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/black.css">
+	<link rel="stylesheet" href="css/theme/white.css">
+	<link rel="stylesheet" href="css/theme/custom.css">
 	
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -22,75 +23,13 @@
 		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 		document.getElementsByTagName( 'head' )[0].appendChild( link );
 	</script>
-	
-	<style>
-		* {
-			font-family: 'Aleo', serif !important;
-		}
-		
-		.reveal h1 {
-			font-size: 64px;
-		}
-		
-		.reveal h2 {
-			font-size: 46px;
-		}
-		
-		.slides section:first-child div {
-			color:#ee5253;
-			background: #ffffffee;
-			padding: 50px;
-		}
-		
-		.slides section:first-child h1,
-		.slides section:first-child h2 {
-			color:#ee5253;
-		}
-		
-		.sommaire .sommaire-parts {
-			display: flex;
-		}
-		
-		.sommaire ul {
-			list-style-type: none;
-			background-color: #fe5a3f;
-			transform: rotate(1deg);
-			padding: 15px 30px;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-		}
-		
-		.sommaire ul li {
-			font-size: 28px;
-			color: #fff;
-			margin: 20px 0;
-			line-height: 1em;
-		}
-
-		.sommaire ul li.sommaire-arrow {
-			font-size: 80px;
-			position: relative;
-			line-height: 1px;
-			text-align: center;
-			animation: moveArrow 1s ease-in-out infinite alternate;
-		}
-
-		@keyframes moveArrow {
-			from {
-				left: -60px;
-			}
-			
-			to {
-				left: 0;
-			}
-			
-		}
-	</style>
 </head>
 <body>
 	<div class="reveal">
 		<div class="slides">
+			
+			<!-- Front Page -->
+			
 			<section data-background-image="/images/s1_bg2.jpg">
 				<div>
 					<h1>Enjeux et évolutions</h1>
@@ -98,11 +37,14 @@
 					<p>Par Guillaume PHAM NGOC et Yoann VIE</p>
 				</div>
 			</section>
-			<section class="sommaire" data-background-color="#fedd02">
+			
+			<!-- Sommaire -->
+			
+			<section class="sommaire">
 				<h1>Sommaire</h1>
 				<div class="sommaire-parts">
 					<ul>
-						<li>1. Préhistoire de l'animation : GIF et Flash</li>
+						<li>1. GIF & Flash : Préhistoire de l'animation</li>
 						<li>2. CSS : entre accessibilité et performances</li>
 						<li>3. Javascript, nouveau terrain de jeu des designers</li>
 						<li>4. Les navigateurs web : quel impact ?</li>
@@ -115,15 +57,83 @@
 					</ul>
 				</div>
 			</section>
+			
+			<!-- GIF & Flash -->
+			
 			<section>
-				<h1>Slide 1</h1>
-				<p>Test d'intégration d'un Codepen</p>
-				<iframe height='265' scrolling='no' title='Checkbox Rocker Toggle Switch' src='//codepen.io/marcusconnor/embed/QJNvMa/?height=265&theme-id=0&default-tab=css,result' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'>See the Pen <a href='https://codepen.io/marcusconnor/pen/QJNvMa/'>Checkbox Rocker Toggle Switch</a> by Marcus Connor (<a href='https://codepen.io/marcusconnor'>@marcusconnor</a>) on <a href='https://codepen.io'>CodePen</a>.
-				</iframe>
+				<h2>GIF & Flash</h2>
+				<iframe src="https://giphy.com/embed/sIIhZliB2McAo" width="480" height="304" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
 			</section>
+			
+			<!-- CSS -->
+			
+			<section>
+				<h2>CSS : entre accessibilité et performances</h2>
+				<iframe height="265" style="width: 100%;" scrolling="no" title="Sunset/Sunrise Animation with CSS Variables" src="//codepen.io/davidkpiano/embed/VmMWZW/?height=265&theme-id=0&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+					See the Pen <a href='https://codepen.io/davidkpiano/pen/VmMWZW/'>Sunset/Sunrise Animation with CSS Variables</a> by David Khourshid
+					(<a href='https://codepen.io/davidkpiano'>@davidkpiano</a>) on <a href='https://codepen.io'>CodePen</a>.
+				</iframe>
+				<iframe height="265" style="width: 100%;" scrolling="no" title="&apos;Making pancake&apos; loader" src="//codepen.io/pawelqcm/embed/ObwyNe/?height=265&theme-id=0&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
+					See the Pen <a href='https://codepen.io/pawelqcm/pen/ObwyNe/'>&apos;Making pancake&apos; loader</a> by Pawel
+					(<a href='https://codepen.io/pawelqcm'>@pawelqcm</a>) on <a href='https://codepen.io'>CodePen</a>.
+				  </iframe>
+				<small>Animations faites en CSS</small>
+			</section>
+
+			
+			
+			<!-- Javascript -->
+			
+			<section>
+				<h2>Javascript, nouveau terrain de jeu des designers</h2>
+				
+				<small></small>
+			</section>
+			
+			<!-- 
+				Les navigateurs web : quel impact ? 
+
+				thèmes :
+				* pb de support cross-browsers 
+				* performances
+				* évolutions du css
+				* chromium
+			-->
+			
+			<section>
+				<h2>Les navigateurs web : quel impact ?</h2>
+				
+				<small></small>
+			</section>
+			
+			<!-- Et demain ? -->
+			
+			<section>
+				<h2>Et demain ?</h2>
+				
+				<small></small>
+			</section>
+			
+			<!-- Du graphiste au développeur -->
+			
+			<section>
+				<h2>Du graphiste au développeur</h2>
+				
+				<small></small>
+			</section>
+			
+			<!-- Utilisation commerciale -->
+			
+			<section>
+				<h2>Utilisation commerciale</h2>
+				
+				<small></small>
+			</section>
+			
+			<!-- The End -->
+			
 			<section data-markdown>
 				# merci
-				------
 			</section>
 		</div>
 	</div>
