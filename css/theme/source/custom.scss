@@ -61,15 +61,24 @@
             margin: 0 0 1em 1em;
             position: relative;
 
-            &:before {
-                content: '\02901';
-                position: absolute;
-                left: -40px;
-                animation: moveSmallArrow 0.7s ease-in-out infinite alternate;
+            &.no-arrow {
+                margin: 1em 0;
             }
+
+            &:not(.no-arrow) {
+                &:before {
+                    content: '\02901';
+                    position: absolute;
+                    left: -40px;
+                    animation: moveSmallArrow 0.7s ease-in-out infinite alternate;
+                }
+            }
+
         }
 
         ul {
+            list-style-type: square;
+
             li {
                 font-size: 30px;
                 text-align: left;
@@ -98,6 +107,18 @@
             & > * {
                 width: 50%;
                 padding: 1em;
+            }
+        }
+
+        .row2 {
+            display: flex;
+            flex-direction: column;
+
+            & > * {
+                max-height: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
 
@@ -134,7 +155,21 @@
                         position: relative;
                         line-height: 1px;
                         text-align: center;
-                        animation: moveArrow 1s ease-in-out infinite alternate;
+                        animation: moveArrow 3s ease-in-out infinite alternate;
+                    }
+                }
+            }
+        }
+
+        &.css {
+            &.section-intro {
+                h3 {
+                    margin-top: 3em;
+                    animation: animCSSIntro 1.2s ease-in-out infinite;
+
+                    span {
+                        font-size: 60px;
+                        vertical-align: middle;
                     }
                 }
             }
@@ -159,5 +194,24 @@
 
     to {
         left: -35px;
+    }
+}
+
+@keyframes animCSSIntro {
+    0% {
+        color: #c44569;
+        transform: rotate3d(30, 20, 10, 15deg) rotate(0deg) translateX(0);
+    }
+    25% {
+        color: #e15f41;
+        transform: rotate3d(20, 20, 10, 15deg) rotate(360deg) translateX(0);
+    }
+    75% {
+        color: #574b90;
+        transform: rotate3d(20, 25, 5, 30deg) rotate(360deg) translateX(-2em);
+    }
+    100% {
+        color: #e66767;
+        transform: rotate3d(30, 20, 5, 15deg) rotate(360deg) translateX(2em);
     }
 }
