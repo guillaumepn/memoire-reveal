@@ -174,8 +174,26 @@
                 }
             }
         }
+
+        &.js {
+            svg {
+                width: 400px;
+                height: 400px;
+                margin: 0 auto;
+                display: block;
+                visibility: hidden;
+            }
+
+            #square,
+            #star {
+                visibility: hidden;
+            }
+        }
     }
 }
+
+
+// Animations
 
 @keyframes moveArrow {
     from {

@@ -103,6 +103,15 @@
     .slides section.css.section-intro h3 span {
       font-size: 60px;
       vertical-align: middle; }
+  .slides section.js svg {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    display: block;
+    visibility: hidden; }
+  .slides section.js #square,
+  .slides section.js #star {
+    visibility: hidden; }
 
 @keyframes moveArrow {
   from {

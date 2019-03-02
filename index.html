@@ -1,195 +1,226 @@
 <!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>L'évolution des animations sur le web</title>
+    <title>L'évolution des animations sur le web</title>
 
-	<link rel="stylesheet" href="css/reveal.css">
-	<link rel="stylesheet" href="css/theme/white.css">
-	<link rel="stylesheet" href="css/theme/custom.css">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css">
+    <link rel="stylesheet" href="css/theme/custom.css">
 
-	<!-- Theme used for syntax highlighting of code -->
-	<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Aleo" rel="stylesheet">
 
-	<!-- Printing and PDF exports -->
-	<script>
-		var link = document.createElement( 'link' );
-		link.rel = 'stylesheet';
-		link.type = 'text/css';
-		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-		document.getElementsByTagName( 'head' )[0].appendChild( link );
-	</script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 </head>
 <body>
-	<div class="reveal">
-		<div class="slides">
+<div class="reveal">
+    <div class="slides">
 
-			<!-- Front Page -->
+        <!-- Front Page -->
 
-			<section class="intro" data-background-image="/images/s1_bg2.jpg">
-				<div>
-					<h1>Enjeux et évolutions</h1>
-					<h2>de l'animation sur le web</h2>
-					<p>Par Guillaume PHAM NGOC et Yoann VIE</p>
-				</div>
-			</section>
+        <section class="intro" data-background-image="/images/s1_bg2.jpg">
+            <div>
+                <h1>Enjeux et évolutions</h1>
+                <h2>de l'animation sur le web</h2>
+                <p>Par Guillaume PHAM NGOC et Yoann VIE</p>
+            </div>
+        </section>
 
-			<!-- Sommaire -->
+        <!-- Sommaire -->
 
-			<section class="sommaire">
-				<h1>Sommaire</h1>
-				<div class="sommaire-parts">
-					<ul>
-						<li>1. GIF & Flash : Préhistoire de l'animation</li>
-						<li>2. CSS : entre accessibilité et performances</li>
-						<li>3. Javascript, nouveau terrain de jeu des designers</li>
-						<li>4. Les navigateurs web : quel impact ?</li>
-					</ul>
-					<ul>
-						<li>5. Et demain ?</li>
-						<li>6. Du graphiste au développeur</li>
-						<li>7. Utilisation commerciale</li>
-						<li class="sommaire-arrow">&#8692;</li>
-					</ul>
-				</div>
-			</section>
+        <section class="sommaire">
+            <h1>Sommaire</h1>
+            <div class="sommaire-parts">
+                <ul>
+                    <li>1. GIF & Flash : Préhistoire de l'animation</li>
+                    <li>2. CSS : entre accessibilité et performances</li>
+                    <li>3. Javascript, nouveau terrain de jeu des designers</li>
+                    <li>4. Les navigateurs web : quel impact ?</li>
+                </ul>
+                <ul>
+                    <li>5. Et demain ?</li>
+                    <li>6. Du graphiste au développeur</li>
+                    <li>7. Utilisation commerciale</li>
+                    <li class="sommaire-arrow">&#8692;</li>
+                </ul>
+            </div>
+        </section>
 
-			<!-- GIF & Flash -->
+        <!-- GIF & Flash -->
 
-			<section class="section-intro">
-				<h2>GIF & Flash</h2>
-				<iframe src="https://giphy.com/embed/sIIhZliB2McAo" width="480" height="304" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-			</section>
+        <section class="section-intro">
+            <h2>GIF & Flash</h2>
+            <iframe src="https://giphy.com/embed/sIIhZliB2McAo" width="480" height="304" frameBorder="0"
+                    class="giphy-embed" allowFullScreen></iframe>
+        </section>
 
-			<section>
-				<h2>GIF & Flash</h2>
-				<h3>Lancement du GIF...</h3>
-				<div class="col2">
-					<ul>
-						<li>Le GIF est apparu en 1987</li>
-						<li>Il faut attendre 1993 pour qu'un navigateur puisse afficher des images sur une page web</li>
-					</ul>
-					<p>
-						<img src="/images/mem-blank.png" alt="">
-						<i>Les débuts du web : des pages ne contenant que textes et liens</i>
-					</p>
-				</div>
-			</section>
+        <section>
+            <h2>GIF & Flash</h2>
+            <h3>Lancement du GIF...</h3>
+            <div class="col2">
+                <ul>
+                    <li>Le GIF est apparu en 1987</li>
+                    <li>Il faut attendre 1993 pour qu'un navigateur puisse afficher des images sur une page web</li>
+                </ul>
+                <p>
+                    <img src="/images/mem-blank.png" alt="">
+                    <i>Les débuts du web : des pages ne contenant que textes et liens</i>
+                </p>
+            </div>
+        </section>
 
-			<section>
-				<h2>GIF & Flash</h2>
-				<h3>... et son utilisation</h3>
-				<div class="col2">
-					<p>
-						<img src="/images/mem-gif-aviasales.gif" alt="">
-						<i>Exemple d'un loader GIF (Aviasales)</i>
-					</p>
-					<ul>
-						<li>Depuis sa 2<sup>ème</sup> version, le <strong>GIF 89a</strong>, les animations peuvent être plus complexes</li>
-						<li>Il permet de boucler une animation simplement</li>
-						<li>Peu coûteux, facile à mettre en place</li>
-					</ul>
-				</div>
-			</section>
+        <section>
+            <h2>GIF & Flash</h2>
+            <h3>... et son utilisation</h3>
+            <div class="col2">
+                <p>
+                    <img src="/images/mem-gif-aviasales.gif" alt="">
+                    <i>Exemple d'un loader GIF (Aviasales)</i>
+                </p>
+                <ul>
+                    <li>Depuis sa 2<sup>ème</sup> version, le <strong>GIF 89a</strong>, les animations peuvent être plus
+                        complexes
+                    </li>
+                    <li>Il permet de boucler une animation simplement</li>
+                    <li>Peu coûteux, facile à mettre en place</li>
+                </ul>
+            </div>
+        </section>
 
-			<!-- CSS -->
+        <!-- CSS -->
 
-			<section class="css section-intro">
-				<h2>Animations CSS</h2>
-				<h3 class=" no-arrow">Un renouveau ? <span>&#10158;</span></h3>
-			</section>
+        <section class="css section-intro">
+            <h2>Animations CSS</h2>
+            <h3 class=" no-arrow">Un renouveau ? <span>&#10158;</span></h3>
+        </section>
 
-			<section>
-				<h2>CSS</h2>
-				<h3>Entre accessibilité et performances</h3>
-				<iframe height="265" style="width: 100%;" scrolling="no" title="Sunset/Sunrise Animation with CSS Variables" src="//codepen.io/davidkpiano/embed/VmMWZW/?height=265&theme-id=0&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-					See the Pen <a href='https://codepen.io/davidkpiano/pen/VmMWZW/'>Sunset/Sunrise Animation with CSS Variables</a> by David Khourshid
-					(<a href='https://codepen.io/davidkpiano'>@davidkpiano</a>) on <a href='https://codepen.io'>CodePen</a>.
-				</iframe>
-				<iframe height="265" style="width: 100%;" scrolling="no" title="&apos;Making pancake&apos; loader" src="//codepen.io/pawelqcm/embed/ObwyNe/?height=265&theme-id=0&default-tab=css,result" frameborder="no" allowtransparency="true" allowfullscreen="true">
-					See the Pen <a href='https://codepen.io/pawelqcm/pen/ObwyNe/'>&apos;Making pancake&apos; loader</a> by Pawel
-					(<a href='https://codepen.io/pawelqcm'>@pawelqcm</a>) on <a href='https://codepen.io'>CodePen</a>.
-				  </iframe>
-				<small>Animations faites en CSS</small>
-			</section>
+        <section>
+            <h2>CSS</h2>
+            <h3>Entre accessibilité et performances</h3>
+            <iframe height="265" style="width: 100%;" scrolling="no" title="Sunset/Sunrise Animation with CSS Variables"
+                    src="//codepen.io/davidkpiano/embed/VmMWZW/?height=265&theme-id=0&default-tab=css,result"
+                    frameborder="no" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/davidkpiano/pen/VmMWZW/'>Sunset/Sunrise Animation with CSS
+                Variables</a> by David Khourshid
+                (<a href='https://codepen.io/davidkpiano'>@davidkpiano</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+            <iframe height="265" style="width: 100%;" scrolling="no" title="&apos;Making pancake&apos; loader"
+                    src="//codepen.io/pawelqcm/embed/ObwyNe/?height=265&theme-id=0&default-tab=css,result"
+                    frameborder="no" allowtransparency="true" allowfullscreen="true">
+                See the Pen <a href='https://codepen.io/pawelqcm/pen/ObwyNe/'>&apos;Making pancake&apos; loader</a> by
+                Pawel
+                (<a href='https://codepen.io/pawelqcm'>@pawelqcm</a>) on <a href='https://codepen.io'>CodePen</a>.
+            </iframe>
+            <small>Animations faites en CSS</small>
+        </section>
 
 
+        <!-- Javascript -->
 
-			<!-- Javascript -->
+        <section class="js section-intro">
+            <h2>Javascript,</h2>
+            <h3 class="no-arrow">nouveau terrain de jeu des designers</h3>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                 y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+              <style type="text/css">
+                .st0 {
+                    fill: #F44336;
+                    stroke: #F44336;
+                    stroke-miterlimit: 10;
+                }
+              </style>
+                <rect id="square" x="32.9" y="37.4" class="st0" width="54.2" height="54.2"/>
+                <polygon id="star" class="st0"
+                         points="60,17 70.7,49.8 105.3,49.8 77.3,70.2 88,103 60,82.7 32,103 42.7,70.2 14.7,49.8 49.3,49.8 	"/>
+                <circle id="circle" class="st0" cx="60" cy="64.5" r="17.1"/>
+            </svg>
+        </section>
 
-			<section>
-				<h2>Javascript, nouveau terrain de jeu des designers</h2>
+        <!--
+            Les navigateurs web : quel impact ?
 
-				<small></small>
-			</section>
+            thèmes :
+            * pb de support cross-browsers
+            * performances
+            * évolutions du css
+            * chromium
+        -->
 
-			<!--
-				Les navigateurs web : quel impact ?
+        <section>
+            <h2>Les navigateurs web : quel impact ?</h2>
 
-				thèmes :
-				* pb de support cross-browsers
-				* performances
-				* évolutions du css
-				* chromium
-			-->
+            <small></small>
+        </section>
 
-			<section>
-				<h2>Les navigateurs web : quel impact ?</h2>
+        <!-- Et demain ? -->
 
-				<small></small>
-			</section>
+        <section>
+            <h2>Et demain ?</h2>
 
-			<!-- Et demain ? -->
+            <small></small>
+        </section>
 
-			<section>
-				<h2>Et demain ?</h2>
+        <!-- Du graphiste au développeur -->
 
-				<small></small>
-			</section>
+        <section>
+            <h2>Du graphiste au développeur</h2>
 
-			<!-- Du graphiste au développeur -->
+            <small></small>
+        </section>
 
-			<section>
-				<h2>Du graphiste au développeur</h2>
+        <!-- Utilisation commerciale -->
 
-				<small></small>
-			</section>
+        <section>
+            <h2>Utilisation commerciale</h2>
 
-			<!-- Utilisation commerciale -->
+            <small></small>
+        </section>
 
-			<section>
-				<h2>Utilisation commerciale</h2>
+        <!-- The End -->
 
-				<small></small>
-			</section>
+        <section data-markdown>
+            # merci
+        </section>
+    </div>
+</div>
 
-			<!-- The End -->
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-			<section data-markdown>
-				# merci
-			</section>
-		</div>
-	</div>
+<!-- Custom-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="/js/morphsvg.js"></script>
+<script src="/js/custom.js"></script>
 
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
-
-	<script>
-		// More info about config & dependencies:
-		// - https://github.com/hakimel/reveal.js#configuration
-		// - https://github.com/hakimel/reveal.js#dependencies
-		Reveal.initialize({
-			dependencies: [
-			{ src: 'plugin/markdown/marked.js' },
-			{ src: 'plugin/markdown/markdown.js' },
-			{ src: 'plugin/notes/notes.js', async: true },
-			{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-			]
-		});
-	</script>
+<script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+        dependencies: [
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+</script>
 </body>
 </html>
