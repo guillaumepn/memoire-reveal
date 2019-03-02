@@ -2,16 +2,22 @@
     font-family: 'Aleo', serif !important;
 }
 
-.reveal h1 {
-    font-size: 64px;
-}
+.reveal {
+    h1 {
+        font-size: 64px;
+    }
 
-.reveal h2 {
-    font-size: 46px;
-}
+    h2 {
+        font-size: 46px;
+    }
 
-.reveal h3 {
-    font-size: 34px;
+    h3 {
+        font-size: 34px;
+    }
+
+    iframe {
+        height: 250px;
+    }
 }
 
 .slide-background {
@@ -45,13 +51,14 @@
         h2 {
             font-size: 40px;
             text-align: left;
+            margin-bottom: 0;
         }
 
         h3 {
             font-size: 34px;
             text-align: left;
             text-transform: initial;
-            margin: 0 0 2em 1em;
+            margin: 0 0 1em 1em;
             position: relative;
 
             &:before {
@@ -62,10 +69,31 @@
             }
         }
 
+        ul {
+            li {
+                font-size: 30px;
+                text-align: left;
+                margin-bottom: 0.5em;
+            }
+        }
+
+        i {
+            font-size: 20px;
+            text-align: center;
+            display: block;
+        }
+
+        &.section-intro {
+            h2, h3 {
+                text-align: center;
+            }
+        }
+
         /* Grid */
 
         .col2 {
             display: flex;
+            align-items: center;
 
             & > * {
                 width: 50%;
