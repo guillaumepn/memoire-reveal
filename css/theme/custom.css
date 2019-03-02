@@ -7,53 +7,78 @@
 .reveal h2 {
   font-size: 46px; }
 
+.reveal h3 {
+  font-size: 34px; }
+
 .slide-background {
   background: #fedd02 !important; }
 
-.slides section:first-child div {
-  color: #ee5253;
-  background: #ffffffee;
-  padding: 50px; }
-
-.slides section:first-child h1, .slides section:first-child h2 {
-  color: #ee5253; }
-
-.slides section small {
-  font-size: 24px;
-  font-style: italic; }
-
-.slides section p {
-  font-size: 30px; }
-
-.slides section h2 {
-  font-size: 40px;
-  margin-bottom: 1em; }
-
-.slides section.sommaire .sommaire-parts {
-  display: flex; }
-
-.slides section.sommaire ul {
-  list-style-type: none;
-  background-color: #fe5a3f;
-  transform: rotate(1deg);
-  padding: 15px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-  .slides section.sommaire ul li {
-    font-size: 28px;
-    color: #fff;
-    margin: 20px 0;
-    line-height: 1em; }
-    .slides section.sommaire ul li.sommaire-arrow {
-      font-size: 80px;
-      position: relative;
-      line-height: 1px;
-      text-align: center;
-      animation: moveArrow 1s ease-in-out infinite alternate; }
+.slides section {
+  /* Grid */
+  /* Specific screens */ }
+  .slides section:first-child div {
+    color: #ee5253;
+    background: #ffffffee;
+    padding: 50px; }
+  .slides section:first-child h1, .slides section:first-child h2 {
+    color: #ee5253; }
+  .slides section small {
+    font-size: 24px;
+    font-style: italic; }
+  .slides section p {
+    font-size: 30px;
+    text-align: left; }
+  .slides section h2 {
+    font-size: 40px;
+    text-align: left; }
+  .slides section h3 {
+    font-size: 34px;
+    text-align: left;
+    text-transform: initial;
+    margin: 0 0 2em 1em;
+    position: relative; }
+    .slides section h3:before {
+      content: '\02901';
+      position: absolute;
+      left: -40px;
+      animation: moveSmallArrow 0.7s ease-in-out infinite alternate; }
+  .slides section .col2 {
+    display: flex; }
+    .slides section .col2 > * {
+      width: 50%;
+      padding: 1em; }
+  .slides section.intro h2, .slides section.intro h3, .slides section.intro p {
+    text-align: center; }
+  .slides section.sommaire .sommaire-parts {
+    display: flex; }
+  .slides section.sommaire ul {
+    list-style-type: none;
+    background-color: #fe5a3f;
+    transform: rotate(1deg);
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .slides section.sommaire ul li {
+      font-size: 28px;
+      color: #fff;
+      margin: 20px 0;
+      line-height: 1em; }
+      .slides section.sommaire ul li.sommaire-arrow {
+        font-size: 80px;
+        position: relative;
+        line-height: 1px;
+        text-align: center;
+        animation: moveArrow 1s ease-in-out infinite alternate; }
 
 @keyframes moveArrow {
   from {
     left: -60px; }
   to {
     left: 0; } }
+
+@keyframes moveSmallArrow {
+  from {
+    left: -40px; }
+  to {
+    left: -35px; } }
