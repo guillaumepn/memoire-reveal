@@ -1,3 +1,5 @@
+Reveal.configure({slideNumber: true});
+
 MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
 
 TweenLite.set("svg", {
