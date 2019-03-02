@@ -13,6 +13,10 @@ Ajouter une `<section>` dans **index.html**
 
 ## Code
 
+SCSS modifiable dans : **/css/theme/source/custom.scss** (avoir `npm start` de lancé pour la compilation)  
+
+JS modifiable dans : **/js/custom.js**  
+
 Utilisation d'une grille simple (`.col2`) :  
 
 ```html
