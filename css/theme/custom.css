@@ -48,6 +48,8 @@
       position: absolute;
       left: -40px;
       animation: moveSmallArrow 0.7s ease-in-out infinite alternate; }
+  .slides section strong {
+    text-decoration: underline; }
   .slides section ul {
     list-style-type: square; }
     .slides section ul li {

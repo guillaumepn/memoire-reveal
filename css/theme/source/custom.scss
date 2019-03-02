@@ -73,7 +73,10 @@
                     animation: moveSmallArrow 0.7s ease-in-out infinite alternate;
                 }
             }
+        }
 
+        strong {
+            text-decoration: underline;
         }
 
         ul {
