@@ -4,7 +4,7 @@
 
 `npm start`  
 
-Aller sur : **localhost:8000**  
+Aller sur : **localhost:8001**  
 
 ## Ajouter des slides
 
