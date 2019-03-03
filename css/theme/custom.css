@@ -48,6 +48,10 @@
       position: absolute;
       left: -40px;
       animation: moveSmallArrow 0.7s ease-in-out infinite alternate; }
+  .slides section .no-bg {
+    background: transparent;
+    border: none;
+    box-shadow: none; }
   .slides section strong {
     text-decoration: underline; }
   .slides section ul {

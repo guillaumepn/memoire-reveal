@@ -75,6 +75,12 @@
             }
         }
 
+        .no-bg {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+        }
+
         strong {
             text-decoration: underline;
         }
