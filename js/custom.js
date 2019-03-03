@@ -1,5 +1,7 @@
+// show slide number
 Reveal.configure({slideNumber: true});
 
+// load svg morphing
 MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
 
 TweenLite.set("svg", {
